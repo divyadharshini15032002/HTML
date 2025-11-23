@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let quantity = Number(prompt("Enter quantity:"));
+        let pricePerItem = 100;
+        let totalCost = quantity * pricePerItem;
+        if (totalCost > 1000) {
+            let discount = totalCost * 0.10;
+            totalCost = totalCost - discount;
+
+            console.log("10% discount applied.");
+            document.write("10% discount applied");
+        }
+        console.log("Total cost = " + totalCost);
+        document.write("Total cost="+toalCost+"<br>")
+
+    </script>
+    
+</body>
+</html>

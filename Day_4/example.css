@@ -1,0 +1,15 @@
+body{
+    background-color: lightblue;
+    height: 400px;
+    width: 60px;
+}
+.product-code{
+    background-color: white;
+    height: 400px;
+    align-items: center;
+    justify-content: center; 
+    width: 250px;
+    margin-left: 20px auto;
+    padding: 15px;
+}
+

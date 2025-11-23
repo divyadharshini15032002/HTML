@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let A =Number(prompt("Enter value of A:"));
+        let B=Number(prompt("Enter value for B:"));
+        let C=prompt("Enter C value(Ad,M,A,AB):");
+
+        switch(C) {
+            case "AD":
+            console.log("Addition(A+B)="+(A+B));
+            break;
+
+            case "M":
+            console.log("Multiplication(A*B)="+(A*B));
+            break;
+
+            case "A":
+            console.log("Average="+((A+B)/2));
+            break;
+
+            case "AB":
+                console.log("Concatenation="+(""+A+B));
+                break;
+            default:
+                console.log("Invalid C value");
+        }
+
+        
+    </script>
+    
+</body>
+</html>

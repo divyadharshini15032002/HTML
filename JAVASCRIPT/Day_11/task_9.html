@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let price = Number(prompt("Enter price:"));
+    let qty = Number(prompt("Enter quantity:"));
+
+    let amount = price * qty;
+    
+    let gst = amount * 0.12;
+    let total = amount + gst;
+
+
+    console.log("GST (12%): " + gst);
+    document.write("GST(12%):"+gst+"<br>");
+
+    console.log("Total amount to pay: " + total);
+    document.write("Total amount to pay:"+total+"<br>");
+
+</script>
+</body>
+</html>
