@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let price = Number(prompt("Enter price:"));
+        let qty = Number(prompt("Enter quantity:"));
+
+        let amount = price * qty;
+        let discount = amount * 0.05;
+        let finalAmount = amount - discount;
+
+        console.log("Discount (5%): " + discount);
+        document.write("Discount(5%):"+discount+"<br>");
+
+        console.log("Amount after discount: " + finalAmount);
+        document.write("Amount after discount:"+finalamount+"<br>");
+    </script>
+    
+</body>
+</html>
