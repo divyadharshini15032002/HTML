@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeDuplicates(str) {
+            return str
+            .split("")
+            .filter((char, index, arr) => arr.indexOf(char) === index)
+            .join("");
+        }
+        console.log(removeDuplicates("hello"));
+        document.write(""+removeDuplicates("hello")+"<br>")
+    </script>
+    
+</body>
+</html>

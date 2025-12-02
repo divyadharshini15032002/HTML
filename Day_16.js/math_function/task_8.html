@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateCompoundInterest(P, r, n, t) {
+            const amount = P * Math.pow(1 + r / n, n * t);
+            return amount;
+        }
+        const principal = 6000;      
+        const rate = 0.07;            
+        const times = 3;             
+        const years = 5;             
+        const finalAmount = calculateCompoundInterest(principal, rate, times, years);
+        
+        console.log(finalAmount.toFixed(2));
+        document.write(""+finalAmount.toFixed(2)+"") 
+
+    </script>
+    
+</body>
+</html>

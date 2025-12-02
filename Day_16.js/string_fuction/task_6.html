@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countWord(sentence, word) {
+            return sentence
+            .toLowerCase()
+            .split(/\s+/)
+            .filter(w => w === word.toLowerCase())
+            .length;
+        }
+
+        console.log(countWord("Hello hello HeLLo world", "hello"));
+        document.write(""+countWord("Hello hello HeLLo world", "hello")+"<br>")
+
+    </script>
+    
+</body>
+</html>

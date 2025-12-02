@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isNivenNumber(num) {
+            let n = Math.abs(num); 
+            let sumOfDigits = 0;
+            let temp = n;
+            while (temp > 0) {
+                sumOfDigits += temp % 10;
+                temp = Math.floor(temp / 10);
+            }
+            return n % sumOfDigits === 0;
+        }
+        let number = parseInt(prompt("Enter a number:"));
+        if (isNivenNumber(number)) {
+            alert(number + " is a Niven number");
+        } else {
+            alert(number + " is NOT a Niven number");
+        }
+    </script>
+    
+</body>
+</html>

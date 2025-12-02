@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countEvenOdd(numbers){
+            let evenCount=0;
+            let oddCount=0;
+
+            for (let num of numbers){
+                if(num % 2 === 0){
+                    evenCount++;
+
+                }else{
+                    oddCount++;
+                }
+            }
+            return{even:evenCount,odd:oddCount};
+        }
+        const nums=[2,4,5,6,7,4,2,1,7,9]
+        const result=countEvenOdd(nums);
+
+        console.log("Even:",result.even);
+        console.log("Odd:",result.odd);
+
+        document.write(""+"Even:",result.even+"<br>")
+        document.write(""+"Odd:",result.odd+"<br>")
+
+    </script>
+    
+</body>
+</html>

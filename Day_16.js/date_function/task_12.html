@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let dayOfWeek = today.getDay();
+        if (dayOfWeek === 0 || dayOfWeek === 6) {
+            console.log("Today is a weekend.");
+        } else {
+            console.log("Today is a weekday.");
+            document.write(""+"Today is a weekday."+"<br>");
+        }
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        
+        console.log("Day of the week:", days[dayOfWeek]);
+        document.write(""+"Day of the week:", days[dayOfWeek]+"<br>")
+
+
+
+
+    </script>
+    
+</body>
+</html>

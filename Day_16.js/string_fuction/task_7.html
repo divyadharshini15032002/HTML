@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = "ab12cd34";
+        const digits = str
+
+        .split("")
+        .filter(ch => !isNaN(ch) && ch !== " ")
+        .join("");
+
+        console.log(digits);  
+        document.write(""+digits+"<br>")
+ 
+
+    </script>
+    
+</body>
+</html>

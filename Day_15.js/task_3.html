@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findDivisibleBy9(start, end) {
+            let numbers = [];
+            let sum = 0;
+            for (let i = start; i <= end; i++) {
+                if (i % 9 === 0) {
+                    numbers.push(i);
+                    sum += i;
+                }
+            }
+            return { numbers, sum };
+        }
+        alert("Numbers divisible by 9: " + result.numbers.join(", "));
+        alert("Sum of these numbers: " + result.sum);
+        let start = parseInt(prompt("Enter start number (e.g., 100):"));
+        let end = parseInt(prompt("Enter end number (e.g., 200):"));
+        let result = findDivisibleBy9(start, end);
+
+
+
+    
+    </script>
+    
+</body>
+</html>

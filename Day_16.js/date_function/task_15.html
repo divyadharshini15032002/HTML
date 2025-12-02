@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let now = new Date();
+        let oneHourLater = new Date(now.getTime() + 1 * 60 * 60 * 1000); 
+        let hours = oneHourLater.getHours();
+        let minutes = oneHourLater.getMinutes();
+        let seconds = oneHourLater.getSeconds();
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        let timeOneHourLater = `${hours}:${minutes}:${seconds}`;
+        
+        console.log("Current Time:", now.toTimeString().split(' ')[0]);
+        document.write(""+"Current Time:", now.toTimeString().split(' ')[0]+"<br>");
+        
+        console.log("Time 1 Hour Later:", timeOneHourLater);
+        document.write(""+"Time 1 Hour Later:", timeOneHourLater+"<br>")
+    
+    </script>
+    
+</body>
+</html>

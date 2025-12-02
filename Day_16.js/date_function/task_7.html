@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dob = new Date("2002-03-15");
+        let today = new Date();
+        let age = today.getFullYear() - dob.getFullYear();
+        let monthDifference = today.getMonth() - dob.getMonth();
+        if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < dob.getDate())) {
+            age--;
+        }
+        console.log("Date of Birth:", dob.toDateString());
+        document.write(""+"Date of Birth:", dob.toDateString()+"<br>");
+
+        console.log("Current Date:", today.toDateString());
+        document.write(""+"Current Date:", today.toDateString()+"<br>");
+        
+        console.log("Age:", age);
+        document.write(""+"Age:", age+"<br>");
+
+       
+       
+</script>
+
+    
+</body>
+</html>

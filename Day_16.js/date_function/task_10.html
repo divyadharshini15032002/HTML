@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
+        let lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+
+        console.log("First Day of the Month:", firstDay.toDateString());
+        document.write(""+"First Day of the Month:", firstDay.toDateString()+"<br>");
+        
+        console.log("Last Day of the Month:", lastDay.toDateString());
+        document.write(""+"Last Day of the Month:", lastDay.toDateString()+"<br>")
+
+    </script>
+    
+</body>
+</html>
