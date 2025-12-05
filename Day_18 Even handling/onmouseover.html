@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover</title>
+    <style>
+        .box{
+            height:200px;
+            width:200px;
+            background-color:green;
+            transition: height 2s, width 2s, background-color 3s;
+        }
+    </style>
+     <script>
+        function large(X){
+            X.style.height="400px";
+            X.style.width="400px";
+            X.style.backgroundcolor="pink";
+        }
+        function small(X){
+            X.style.height="200px";
+            X.style.width="200px";
+            X.style.backgroundcolor="green";
+
+        }
+    </script>
+    
+    
+</head>
+<body>
+   
+    <div class="box" onmouseover="large(this)"   onmouseout="small(this)"></div>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>square</title>
+   
+</head>
+<body>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            transition: 2s;
+        }
+    </style>
+    <script>
+        function square(y){
+            y.style.height="500px";
+            y.style.width="500px";
+
+
+            y.style.backgroudColor="green";
+            y.style.borderRadius="900px";
+
+        }
+        function rectangle(y) {
+            y.style.height="300px";
+            y.style.width="400px";
+
+            y.style.borderRadius="0px";
+            y.style.backgroudColor="red";
+            
+        }
+    </script>
+    <div onmouseover="square(this)" onmouseout="rectangle(this)"></div>
+
+   
+    
+</body>
+</html>

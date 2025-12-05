@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>image</title>
+</head>
+    <style>
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+            margin: 30px;
+        }
+        .first,
+        .second,
+        .third  {
+
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+        }
+
+        p{
+            width: 215px;
+        }
+        button{
+            background-color: white;
+            color: brown;
+            border-radius: 10px;
+            margin-top: 3px;
+
+        }
+        img{
+            height: 100px;
+            width: 220px;
+            transition: 1s;
+        }
+        
+    </style>
+
+<body>
+    <script>
+        function zoom(x){
+            x.style.width="150px";
+            x.style.width="150px";
+        }
+        function normal(x){
+            x.style.width="220px";
+            x.style.height="100px"
+        }
+    </script>
+    <div class="main">
+        <div class="first">
+            <img 
+            src="./birds.webp" 
+            onmouseover="zoom(this)"
+            onmouseout="normal(this)"
+            />
+            <div>
+                <h2>Birds</h2>
+                <p>Birds are animals that have feathers, wings, and beaks, and they 
+                    often fly and build nests for their eggs. For example, a sentence could be: 
+                    "The colorful birds built a nest in the tall tree to lay their eggs". Another example 
+                    is: "I enjoy watching birds fly through the sky, their wings catching the sunligh
+                    t as they soar". 
+                </p>
+                
+                <button>birds</button>
+             </div>
+        </div>
+        <div calss="second">
+            <img 
+               src="./peacock.jfif" alt=""
+               onmouseover="zoom(this)"
+               onmouseout="normal(this)"
+            />
+            <div>
+                <h2>Peacock</h2>
+                <p>The peacock is the national bird of India and is known for its stunning, 
+                    colorful, and long tail feathers that it can fan out like a fan. Males (peacocks) 
+                    are famous for their elaborate courtship displays to attract females (peahens).
+                     These large birds can be found in forests and gardens, and their diet includes 
+                     grains, insects, and small snakes. 
+                </p>
+                <button>peacock</button>
+             </div>
+        </div>
+        <div class="third">
+            <img
+              src="./parrot.jfif" alt=""
+              onmouseover="zoom(this)"
+              onmouseout="normal(this)"
+            />
+            <div>
+            <h2>Pexels</h2>
+            <p>Parrots are intelligent, colorful birds known for their strong, curved beaks,
+                 social nature, and ability to mimic human speech. They live in warm, tropical 
+                 regions and primarily eat fruits, seeds, and nuts. Many species are found in flocks 
+                 and are a popular choice for pets, though some face threats of extinction.  
+            </p>
+            <button>parrot</button>
+            </div>
+        
+        </div>
+    </div>
+   
+    
+</body>
+</html>
