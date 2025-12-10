@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="height: 150px; width: 150px; background:blue;display: inline-block;"></div>
+    <div class ="box" style="height: 150px; width: 150px; background: greenyellow; display: inline-block;"></div>
+    <div class ="box" style="height: 150px; width: 150px; background: palevioletred; display: inline-block;"></div>
+
+    <script>
+        const boxes =document.querySelectorAll(".box")
+        boxes.forEach(box =>{
+            box.addEventListener("click",function(){
+                document.body.style.backgroundColor=this.style.backgroundColor;
+            })
+        });
+    </script>
+ 
+    
+</body>
+</html>

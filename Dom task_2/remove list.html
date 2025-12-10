@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const ul = document.createElement("ul");
+       const friends = ["Divya", "Sabith", "Chandru", "Nivetha", "Muish"];
+       friends.forEach(friend => {
+        const li = document.createElement("li");
+        li.textContent = friend;
+        li.addEventListener("click", () => {
+        ul.removeChild(li);
+       });
+       ul.appendChild(li);
+      });
+       document.body.appendChild(ul);
+    </script>
+
+    
+</body>
+</html>

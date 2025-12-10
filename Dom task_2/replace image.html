@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <img src="./birds.jfif" id="image">
+    <button onclick="changeimg()">Change Image</button>
+
+    <script>
+        function changeimg(){
+            let img1=document.getElementById("image");
+            let img2=document.createElement("img");
+            let img3=document.createElement("img")
+
+            img2.src="./rose.jfif";
+            img3. src="./download.jpeg";
+
+            document.body.replaceChild(img3,img1);
+            
+            
+        }
+    </script>
+    
+</body>
+</html>
