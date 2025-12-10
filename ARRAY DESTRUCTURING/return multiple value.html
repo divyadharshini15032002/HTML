@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getUserData() {
+            const name = "divya";
+            const age = 25;
+            const hobbies = ["reading", "gaming", "coding"];
+
+            return [name, age, hobbies]; 
+
+        }
+
+
+        const [userName, userAge, userHobbies] = getUserData();
+
+        document.write(""+userName+"<br>");
+        document.write(""+userAge+"<br>");
+        document.write(""+userHobbies+"<br>");
+
+    </script>
+    
+</body>
+</html>
